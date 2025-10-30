@@ -18,11 +18,11 @@ const Footer = () => {
 
   return (
     <footer className="bg-accent text-accent-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8">
           {/* Logo e descrição */}
-          <div className="md:col-span-1">
-            <img src={logo} alt="Lilian Design de Interiores" className="h-12 w-auto mb-4" />
+          <div className="sm:col-span-2 lg:col-span-1">
+            <img src={logo} alt="Lilian Design de Interiores" className="h-10 sm:h-12 w-auto mb-4" />
             <p className="text-sm text-accent-foreground/80 leading-relaxed">
               Transformando ambientes em experiências únicas há mais de 20 anos.
             </p>
@@ -30,7 +30,7 @@ const Footer = () => {
 
           {/* Links rápidos */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Navegação</h3>
+            <h3 className="font-semibold text-base sm:text-lg mb-4">Navegação</h3>
             <ul className="space-y-2">
               <li>
                 <button
@@ -77,7 +77,7 @@ const Footer = () => {
 
           {/* Contato */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contato</h3>
+            <h3 className="font-semibold text-base sm:text-lg mb-4">Contato</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
@@ -110,7 +110,7 @@ const Footer = () => {
 
           {/* Redes sociais */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Redes sociais</h3>
+            <h3 className="font-semibold text-base sm:text-lg mb-4">Redes sociais</h3>
             <div className="flex gap-3">
               <a
                 href="https://instagram.com/lilianinteriores23"

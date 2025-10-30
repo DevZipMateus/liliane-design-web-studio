@@ -3,18 +3,18 @@ import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
-    <section id="contato" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Entre em contato</h2>
-          <p className="text-lg text-muted-foreground">
+    <section id="contato" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Entre em contato</h2>
+          <p className="text-base sm:text-lg text-muted-foreground">
             Vamos conversar sobre o seu projeto? Estou à disposição para transformar seus ambientes
             em espaços únicos e inspiradores.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          <div className="space-y-8">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 max-w-5xl mx-auto">
+          <div className="space-y-6 sm:space-y-8">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                 <Phone className="w-6 h-6 text-primary" />
@@ -74,8 +74,8 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-muted/30 p-8 rounded-lg">
-            <h3 className="text-2xl font-semibold mb-6">Redes sociais</h3>
+          <div className="bg-muted/30 p-6 sm:p-8 rounded-lg">
+            <h3 className="text-xl sm:text-2xl font-semibold mb-6">Redes sociais</h3>
             <div className="space-y-4">
               <a
                 href="https://instagram.com/lilianinteriores23"

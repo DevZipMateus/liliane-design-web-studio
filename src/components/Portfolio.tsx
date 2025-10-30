@@ -40,17 +40,17 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Portfólio</h2>
-          <p className="text-lg text-muted-foreground">
+    <section id="portfolio" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Portfólio</h2>
+          <p className="text-base sm:text-lg text-muted-foreground">
             Conheça alguns dos nossos projetos que transformaram espaços em ambientes únicos e
             inspiradores.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={index}

@@ -2,11 +2,11 @@ import { Heart, Target, Sparkles } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="sobre" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="sobre" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">Sobre nós</h2>
-          <p className="text-lg text-muted-foreground text-center mb-16 max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 sm:mb-6">Sobre nós</h2>
+          <p className="text-base sm:text-lg text-muted-foreground text-center mb-12 sm:mb-16 max-w-3xl mx-auto">
             Acredito que cada espaço carrega uma história — e que o design tem o poder de
             transformá-la em emoção, conforto e identidade.
           </p>
@@ -27,7 +27,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mt-16">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
                 <Target className="w-8 h-8 text-primary" />
