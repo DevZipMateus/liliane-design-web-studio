@@ -1,0 +1,78 @@
+import project1 from "@/assets/project-1.jpg";
+import project2 from "@/assets/project-2.jpg";
+import project3 from "@/assets/project-3.jpg";
+import project4 from "@/assets/project-4.jpg";
+import project5 from "@/assets/project-5.jpg";
+import project6 from "@/assets/project-6.jpg";
+
+const projects = [
+  {
+    image: project1,
+    title: "Cozinha contemporânea",
+    category: "Design de interiores",
+  },
+  {
+    image: project2,
+    title: "Quarto aconchegante",
+    category: "Decoração",
+  },
+  {
+    image: project3,
+    title: "Sala de jantar elegante",
+    category: "Design de interiores",
+  },
+  {
+    image: project4,
+    title: "Home office funcional",
+    category: "Design de interiores",
+  },
+  {
+    image: project5,
+    title: "Área externa moderna",
+    category: "Paisagismo",
+  },
+  {
+    image: project6,
+    title: "Banheiro spa",
+    category: "Design de interiores",
+  },
+];
+
+const Portfolio = () => {
+  return (
+    <section id="portfolio" className="py-24 bg-muted/30">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Portfólio</h2>
+          <p className="text-lg text-muted-foreground">
+            Conheça alguns dos nossos projetos que transformaram espaços em ambientes únicos e
+            inspiradores.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-lg shadow-soft hover:shadow-elegant transition-smooth aspect-[4/5]"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover transition-smooth group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-smooth">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <p className="text-primary-foreground/80 text-sm mb-1">{project.category}</p>
+                  <h3 className="text-primary-foreground text-xl font-semibold">{project.title}</h3>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Portfolio;
