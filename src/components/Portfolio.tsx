@@ -1,39 +1,39 @@
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
-import project5 from "@/assets/project-5.jpg";
-import project6 from "@/assets/project-6.jpg";
+import project1 from "@/assets/portfolio-1.jpg";
+import project2 from "@/assets/portfolio-2.jpg";
+import project3 from "@/assets/portfolio-3.jpg";
+import project4 from "@/assets/portfolio-4.jpg";
+import project5 from "@/assets/portfolio-5.jpg";
+import project6 from "@/assets/portfolio-6.jpg";
 
 const projects = [
   {
     image: project1,
-    title: "Cozinha contemporânea",
+    title: "Home office corporativo",
     category: "Design de interiores",
   },
   {
     image: project2,
-    title: "Quarto aconchegante",
-    category: "Decoração",
+    title: "Quarto moderno",
+    category: "Design de interiores",
   },
   {
     image: project3,
-    title: "Sala de jantar elegante",
+    title: "Cozinha planejada",
     category: "Design de interiores",
   },
   {
     image: project4,
-    title: "Home office funcional",
+    title: "Sala de jantar integrada",
     category: "Design de interiores",
   },
   {
     image: project5,
-    title: "Área externa moderna",
-    category: "Paisagismo",
+    title: "Cozinha gourmet",
+    category: "Design de interiores",
   },
   {
     image: project6,
-    title: "Banheiro spa",
+    title: "Lavabo contemporâneo",
     category: "Design de interiores",
   },
 ];
