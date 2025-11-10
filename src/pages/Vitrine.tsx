@@ -29,7 +29,7 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="min-h-screen overflow-hidden flex flex-col">
+    <div className="h-screen overflow-hidden flex flex-col">
       <Header />
       
       {/* Spacer for fixed header - 80px */}
