@@ -17,6 +17,17 @@ const Vitrine = () => {
     return () => window.removeEventListener("resize", calculateHeight);
   }, []);
 
+  useEffect(() => {
+    // Load Montesite badge script (same as in index.html)
+    const existingScript = document.querySelector('script[src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"]');
+    
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.src = 'https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe';
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen overflow-hidden flex flex-col">
       <Header />
