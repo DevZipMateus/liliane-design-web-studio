@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 
 const Vitrine = () => {
-  const [iframeHeight, setIframeHeight] = useState(0);
+  const [iframeHeight, setIframeHeight] = useState(window.innerHeight - 80);
 
   useEffect(() => {
     // Trava a rolagem do body quando entrar na página
