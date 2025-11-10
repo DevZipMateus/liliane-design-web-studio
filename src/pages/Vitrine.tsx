@@ -5,6 +5,18 @@ const Vitrine = () => {
   const [iframeHeight, setIframeHeight] = useState(0);
 
   useEffect(() => {
+    // Trava a rolagem do body quando entrar na página
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+    
+    return () => {
+      // Restaura a rolagem quando sair da página
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    };
+  }, []);
+
+  useEffect(() => {
     const calculateHeight = () => {
       // 80px header + 48px badge
       const height = window.innerHeight - 128;
