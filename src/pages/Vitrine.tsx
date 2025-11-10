@@ -17,18 +17,6 @@ const Vitrine = () => {
     return () => window.removeEventListener("resize", calculateHeight);
   }, []);
 
-  useEffect(() => {
-    // Load Montesite badge script
-    const script = document.createElement('script');
-    script.src = 'https://montesite.com.br/badge.js';
-    script.type = 'module';
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <div className="min-h-screen overflow-hidden flex flex-col">
       <Header />
@@ -45,8 +33,10 @@ const Vitrine = () => {
         />
       </div>
       
-      {/* Montesite Badge */}
-      <div id="montesite-footer-badge"></div>
+      {/* Montesite Badge - Fixed height container */}
+      <div className="w-full h-[63px] flex items-center justify-center bg-background">
+        <div id="montesite-footer-badge"></div>
+      </div>
     </div>
   );
 };
