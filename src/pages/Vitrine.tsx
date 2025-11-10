@@ -6,8 +6,8 @@ const Vitrine = () => {
 
   useEffect(() => {
     const calculateHeight = () => {
-      // 80px header only
-      const height = window.innerHeight - 80;
+      // 80px header + 63px badge = 143px
+      const height = window.innerHeight - 143;
       setIframeHeight(height);
     };
 
@@ -15,6 +15,18 @@ const Vitrine = () => {
     window.addEventListener("resize", calculateHeight);
     
     return () => window.removeEventListener("resize", calculateHeight);
+  }, []);
+
+  useEffect(() => {
+    // Load Montesite badge script
+    const script = document.createElement('script');
+    script.src = 'https://montesite.com.br/badge.js';
+    script.type = 'module';
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
@@ -32,6 +44,9 @@ const Vitrine = () => {
           title="Demonstração de Vitrine"
         />
       </div>
+      
+      {/* Montesite Badge */}
+      <div id="montesite-footer-badge"></div>
     </div>
   );
 };
