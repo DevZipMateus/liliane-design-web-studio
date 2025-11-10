@@ -6,8 +6,8 @@ const Vitrine = () => {
 
   useEffect(() => {
     const calculateHeight = () => {
-      // 80px header only - badge loads dynamically
-      const height = window.innerHeight - 80;
+      // 80px header + 48px badge
+      const height = window.innerHeight - 128;
       setIframeHeight(height);
     };
 
@@ -44,8 +44,12 @@ const Vitrine = () => {
         />
       </div>
       
-      {/* Montesite Badge - carrega dinamicamente */}
-      <div id="montesite-footer-badge"></div>
+      {/* Montesite Badge */}
+      <div className="w-full h-12 flex-shrink-0 bg-gray-100 flex items-center justify-center border-t border-gray-200">
+        <p className="text-sm">
+          Desenvolvido por <a href="https://montesite.com.br" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline"><span className="text-[#007bff]">Monte</span><span className="text-black">Site</span></a>
+        </p>
+      </div>
     </div>
   );
 };
