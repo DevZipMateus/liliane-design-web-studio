@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-interior.jpg";
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -36,6 +37,11 @@ const Hero = () => {
             <Button onClick={() => scrollToSection("portfolio")} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-elegant text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
               Ver projetos
             </Button>
+            <Link to="/vitrine" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-base sm:text-lg px-6 sm:px-8 w-full">
+                Ver Vitrine
+              </Button>
+            </Link>
             <Button onClick={() => scrollToSection("contato")} size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
               Fale conosco
             </Button>
