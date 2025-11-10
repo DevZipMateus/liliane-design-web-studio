@@ -4,6 +4,8 @@ import project3 from "@/assets/portfolio-3.jpg";
 import project4 from "@/assets/portfolio-4.jpg";
 import project5 from "@/assets/portfolio-5.jpg";
 import project6 from "@/assets/portfolio-6.jpg";
+import project7 from "@/assets/portfolio-7.jpg";
+import project8 from "@/assets/portfolio-8.jpg";
 
 const projects = [
   {
@@ -34,6 +36,16 @@ const projects = [
   {
     image: project6,
     title: "Lavabo contemporâneo",
+    category: "Design de interiores",
+  },
+  {
+    image: project7,
+    title: "Dormitório elegante",
+    category: "Design de interiores",
+  },
+  {
+    image: project8,
+    title: "Cozinha clean madeirada",
     category: "Design de interiores",
   },
 ];
