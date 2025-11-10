@@ -9,7 +9,19 @@ const Vitrine = () => {
     document.body.style.overflow = 'hidden';
     document.documentElement.style.overflow = 'hidden';
     
+    // Força o carregamento do badge MonteSite
+    const loadMonteSiteBadge = () => {
+      const script = document.createElement('script');
+      script.src = 'https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe';
+      script.async = true;
+      document.body.appendChild(script);
+    };
+    
+    // Aguarda um pouco para garantir que o DOM está pronto
+    const timer = setTimeout(loadMonteSiteBadge, 100);
+    
     return () => {
+      clearTimeout(timer);
       // Restaura a rolagem quando sair da página
       document.body.style.overflow = '';
       document.documentElement.style.overflow = '';
