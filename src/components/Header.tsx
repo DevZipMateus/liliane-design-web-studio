@@ -50,7 +50,7 @@ const Header = () => {
     }
   };
   return <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-soft" : "bg-transparent"}`}>
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background shadow-soft transition-smooth">
         <div className="container mx-auto px-4 py-3 sm:py-4">
           <nav className="flex items-center justify-between">
             <button onClick={() => handleNavigation("hero")} className="flex items-center transition-smooth hover:opacity-80">
