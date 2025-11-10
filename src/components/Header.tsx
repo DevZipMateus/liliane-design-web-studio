@@ -44,6 +44,9 @@ const Header = () => {
               <button onClick={() => scrollToSection("portfolio")} className="text-foreground/80 hover:text-primary transition-smooth font-medium">
                 Portfólio
               </button>
+              <a href="/vitrine" className="text-foreground/80 hover:text-primary transition-smooth font-medium">
+                Vitrine
+              </a>
               <Button onClick={() => scrollToSection("contato")} className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-elegant">
                 Contato
               </Button>
@@ -71,6 +74,9 @@ const Header = () => {
               <button onClick={() => scrollToSection("portfolio")} className="text-left py-3 px-4 text-foreground/80 hover:text-primary hover:bg-muted/50 rounded-lg transition-smooth font-medium">
                 Portfólio
               </button>
+              <a href="/vitrine" className="text-left py-3 px-4 text-foreground/80 hover:text-primary hover:bg-muted/50 rounded-lg transition-smooth font-medium">
+                Vitrine
+              </a>
               <Button onClick={() => scrollToSection("contato")} className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-elegant" size="lg">
                 Contato
               </Button>
