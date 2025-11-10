@@ -6,8 +6,8 @@ const Vitrine = () => {
 
   useEffect(() => {
     const calculateHeight = () => {
-      // 80px header + 63px badge = 143px
-      const height = window.innerHeight - 143;
+      // 80px header only
+      const height = window.innerHeight - 80;
       setIframeHeight(height);
     };
 
@@ -44,10 +44,8 @@ const Vitrine = () => {
         />
       </div>
       
-      {/* Montesite Badge - Fixed height container */}
-      <div className="w-full h-[63px] flex items-center justify-center bg-background">
-        <div id="montesite-footer-badge"></div>
-      </div>
+      {/* Montesite Badge */}
+      <div id="montesite-footer-badge"></div>
     </div>
   );
 };
