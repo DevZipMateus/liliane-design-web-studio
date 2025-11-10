@@ -33,8 +33,10 @@ const Vitrine = () => {
         />
       </div>
       
-      {/* Badge space - 63px */}
-      <div className="h-[63px]" />
+      {/* Montesite Badge - 63px */}
+      <div className="h-[63px] flex items-center justify-center">
+        <div id="montesite-footer-badge-vitrine"></div>
+      </div>
     </div>
   );
 };
