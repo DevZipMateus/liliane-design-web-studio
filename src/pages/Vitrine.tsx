@@ -6,8 +6,8 @@ const Vitrine = () => {
 
   useEffect(() => {
     const calculateHeight = () => {
-      // 80px header only
-      const height = window.innerHeight - 80;
+      // 80px header + 63px badge = 143px
+      const height = window.innerHeight - 143;
       setIframeHeight(height);
     };
 
@@ -36,7 +36,7 @@ const Vitrine = () => {
       <div className="h-20" />
       
       {/* Iframe with calculated height */}
-      <div className="w-full" style={{ height: `${iframeHeight}px` }}>
+      <div className="w-full flex-shrink-0" style={{ height: `${iframeHeight}px` }}>
         <iframe 
           src="https://lilianinteriores.egestor.com.br/vitrine/" 
           className="w-full h-full border-none"
@@ -44,8 +44,10 @@ const Vitrine = () => {
         />
       </div>
       
-      {/* Montesite Badge */}
-      <div id="montesite-footer-badge"></div>
+      {/* Montesite Badge - Fixed at bottom */}
+      <div className="w-full h-[63px] flex-shrink-0">
+        <div id="montesite-footer-badge"></div>
+      </div>
     </div>
   );
 };
