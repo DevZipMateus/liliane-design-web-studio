@@ -177,10 +177,10 @@ const Portfolio = () => {
                   className="w-full h-full object-cover transition-smooth group-hover:scale-110"
                 />
                 {item.type === "carousel" && (
-                  <div className="absolute top-3 right-3 bg-background/80 backdrop-blur-sm rounded-full px-2 py-1 flex items-center gap-1 text-xs text-foreground">
-                    <ChevronLeft className="h-3 w-3" />
-                    <span>{item.images.length}</span>
-                    <ChevronRight className="h-3 w-3" />
+                  <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-background/90 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-2 text-sm text-foreground shadow-md">
+                    <ChevronLeft className="h-4 w-4" />
+                    <span className="font-medium">{item.images.length} fotos</span>
+                    <ChevronRight className="h-4 w-4" />
                   </div>
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-smooth">
