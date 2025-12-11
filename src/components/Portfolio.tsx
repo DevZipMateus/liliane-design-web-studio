@@ -107,7 +107,7 @@ const PortfolioCard = ({
         className="w-full h-full object-cover transition-smooth group-hover:scale-110"
       />
       {item.type === "carousel" && (
-        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-background/90 backdrop-blur-sm rounded-full px-2 py-1.5 flex items-center gap-1 text-sm text-foreground shadow-md">
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 bg-background/90 backdrop-blur-sm rounded-full px-2 py-1.5 flex items-center gap-1 text-sm text-foreground shadow-md">
           <button
             onClick={handlePrev}
             className="p-1 hover:bg-muted rounded-full transition-colors"
@@ -125,7 +125,7 @@ const PortfolioCard = ({
           </button>
         </div>
       )}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-smooth">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-smooth z-10 pointer-events-none">
         <div className="absolute bottom-0 left-0 right-0 p-6">
           <p className="text-primary-foreground/80 text-sm mb-1">{item.category}</p>
           <h3 className="text-primary-foreground text-xl font-semibold">{item.title}</h3>
