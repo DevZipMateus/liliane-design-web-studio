@@ -42,16 +42,14 @@ const portfolioItems: PortfolioItem[] = [
     ],
   },
   {
-    type: "single",
+    type: "carousel",
     title: "Quarto moderno",
     category: "Design de interiores",
-    images: [{ image: project3, title: "Quarto moderno", category: "Design de interiores" }],
-  },
-  {
-    type: "single",
-    title: "Cozinha planejada",
-    category: "Design de interiores",
-    images: [{ image: project4, title: "Cozinha planejada", category: "Design de interiores" }],
+    images: [
+      { image: project3, title: "Quarto moderno", category: "Design de interiores" },
+      { image: project4, title: "Quarto moderno", category: "Design de interiores" },
+      { image: project12, title: "Quarto moderno", category: "Design de interiores" },
+    ],
   },
   {
     type: "single",
@@ -76,12 +74,6 @@ const portfolioItems: PortfolioItem[] = [
     title: "Dormitório elegante",
     category: "Design de interiores",
     images: [{ image: project8, title: "Dormitório elegante", category: "Design de interiores" }],
-  },
-  {
-    type: "single",
-    title: "Cozinha compacta planejada",
-    category: "Design de interiores",
-    images: [{ image: project12, title: "Cozinha compacta planejada", category: "Design de interiores" }],
   },
 ];
 
