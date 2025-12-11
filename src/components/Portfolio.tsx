@@ -71,9 +71,9 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     type: "single",
-    title: "Dormitório elegante",
+    title: "Cozinha integrada",
     category: "Design de interiores",
-    images: [{ image: project8, title: "Dormitório elegante", category: "Design de interiores" }],
+    images: [{ image: project8, title: "Cozinha integrada", category: "Design de interiores" }],
   },
 ];
 
