@@ -11,7 +11,7 @@ const VitrineSection = () => {
             Explore Nossa Vitrine Virtual
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Descubra uma seleção exclusiva de móveis, objetos de decoração e acessórios 
+            Descubra uma seleção exclusiva de objetos de decoração e acessórios 
             cuidadosamente escolhidos para transformar seu ambiente. Nossa vitrine oferece 
             peças únicas que combinam design, qualidade e sofisticação.
           </p>
