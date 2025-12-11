@@ -17,6 +17,16 @@ import project7 from "@/assets/portfolio-7.jpg";
 import project8 from "@/assets/portfolio-8.jpg";
 import project9 from "@/assets/portfolio-9.jpg";
 import project12 from "@/assets/portfolio-12.jpg";
+import closetModerno from "@/assets/closet-moderno.jpg";
+import cozinhaRusticoVerde from "@/assets/cozinha-rustico-verde.png";
+import cozinhaMadeiradaGrafite from "@/assets/cozinha-madeirada-grafite.png";
+import cozinhaIntegrada1 from "@/assets/cozinha-integrada-1.jpg";
+import cozinhaIntegrada2 from "@/assets/cozinha-integrada-2.png";
+import lavaboMadeirado from "@/assets/lavabo-madeirado.jpg";
+import cozinhaBranca1 from "@/assets/cozinha-branca-1.png";
+import cozinhaBranca2 from "@/assets/cozinha-branca-2.png";
+import cozinhaBranca3 from "@/assets/cozinha-branca-3.png";
+import salaTv from "@/assets/sala-tv.jpg";
 
 type ProjectItem = {
   image: string;
@@ -74,6 +84,55 @@ const portfolioItems: PortfolioItem[] = [
     title: "Cozinha integrada",
     category: "Design de interiores",
     images: [{ image: project8, title: "Cozinha integrada", category: "Design de interiores" }],
+  },
+  {
+    type: "single",
+    title: "Closet moderno iluminado",
+    category: "Design de interiores",
+    images: [{ image: closetModerno, title: "Closet moderno iluminado", category: "Design de interiores" }],
+  },
+  {
+    type: "single",
+    title: "Cozinha rústica moderna",
+    category: "Design de interiores",
+    images: [{ image: cozinhaRusticoVerde, title: "Cozinha rústica moderna", category: "Design de interiores" }],
+  },
+  {
+    type: "single",
+    title: "Cozinha madeirada com grafite",
+    category: "Design de interiores",
+    images: [{ image: cozinhaMadeiradaGrafite, title: "Cozinha madeirada com grafite", category: "Design de interiores" }],
+  },
+  {
+    type: "carousel",
+    title: "Cozinha madeirada integrada",
+    category: "Design de interiores",
+    images: [
+      { image: cozinhaIntegrada1, title: "Cozinha madeirada integrada", category: "Design de interiores" },
+      { image: cozinhaIntegrada2, title: "Cozinha madeirada integrada", category: "Design de interiores" },
+    ],
+  },
+  {
+    type: "single",
+    title: "Lavabo madeirado",
+    category: "Design de interiores",
+    images: [{ image: lavaboMadeirado, title: "Lavabo madeirado", category: "Design de interiores" }],
+  },
+  {
+    type: "carousel",
+    title: "Cozinha branca elegante",
+    category: "Design de interiores",
+    images: [
+      { image: cozinhaBranca1, title: "Cozinha branca elegante", category: "Design de interiores" },
+      { image: cozinhaBranca2, title: "Cozinha branca elegante", category: "Design de interiores" },
+      { image: cozinhaBranca3, title: "Cozinha branca elegante", category: "Design de interiores" },
+    ],
+  },
+  {
+    type: "single",
+    title: "Sala de TV",
+    category: "Design de interiores",
+    images: [{ image: salaTv, title: "Sala de TV", category: "Design de interiores" }],
   },
 ];
 
