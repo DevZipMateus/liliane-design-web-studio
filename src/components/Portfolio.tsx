@@ -53,9 +53,9 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     type: "single",
-    title: "Sala de jantar integrada",
+    title: "Cozinha moderna integrada",
     category: "Design de interiores",
-    images: [{ image: project5, title: "Sala de jantar integrada", category: "Design de interiores" }],
+    images: [{ image: project5, title: "Cozinha moderna integrada", category: "Design de interiores" }],
   },
   {
     type: "single",
