@@ -65,9 +65,9 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     type: "single",
-    title: "Lavabo contemporâneo",
+    title: "Dormitório clean",
     category: "Design de interiores",
-    images: [{ image: project7, title: "Lavabo contemporâneo", category: "Design de interiores" }],
+    images: [{ image: project7, title: "Dormitório clean", category: "Design de interiores" }],
   },
   {
     type: "single",
