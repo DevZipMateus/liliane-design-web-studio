@@ -121,12 +121,12 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     type: "carousel",
-    title: "Cozinha branca elegante",
+    title: "Cozinha clean com toque rústico",
     category: "Design de interiores",
     images: [
-      { image: cozinhaBranca1, title: "Cozinha branca elegante", category: "Design de interiores" },
-      { image: cozinhaBranca2, title: "Cozinha branca elegante", category: "Design de interiores" },
-      { image: cozinhaBranca3, title: "Cozinha branca elegante", category: "Design de interiores" },
+      { image: cozinhaBranca1, title: "Cozinha clean com toque rústico", category: "Design de interiores" },
+      { image: cozinhaBranca2, title: "Cozinha clean com toque rústico", category: "Design de interiores" },
+      { image: cozinhaBranca3, title: "Cozinha clean com toque rústico", category: "Design de interiores" },
     ],
   },
   {
