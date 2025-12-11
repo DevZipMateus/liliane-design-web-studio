@@ -107,7 +107,7 @@ const PortfolioCard = ({
         className="w-full h-full object-cover transition-smooth group-hover:scale-110"
       />
       {item.type === "carousel" && (
-        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 bg-background/90 backdrop-blur-sm rounded-full px-2 py-1.5 flex items-center gap-1 text-sm text-foreground shadow-md">
+        <div className="absolute top-3 right-3 z-20 bg-background/90 backdrop-blur-sm rounded-full px-2 py-1.5 flex items-center gap-1 text-sm text-foreground shadow-md">
           <button
             onClick={handlePrev}
             className="p-1 hover:bg-muted rounded-full transition-colors"
