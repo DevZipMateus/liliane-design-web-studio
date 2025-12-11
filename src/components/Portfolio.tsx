@@ -173,19 +173,21 @@ const PortfolioCard = ({
         className="w-full h-full object-cover transition-smooth group-hover:scale-110"
       />
       {item.type === "carousel" && (
-        <div className="absolute top-3 right-3 z-20 bg-background/90 backdrop-blur-sm rounded-full px-2 py-1.5 flex items-center gap-1 text-sm text-foreground shadow-md">
+        <div className="absolute top-3 right-3 z-30 bg-background/90 backdrop-blur-sm rounded-full px-2 py-1.5 flex items-center gap-1 text-sm text-foreground shadow-md">
           <button
             onClick={handlePrev}
-            className="p-1 hover:bg-muted rounded-full transition-colors"
+            className="p-1.5 hover:bg-muted rounded-full transition-colors cursor-pointer"
             aria-label="Foto anterior"
+            type="button"
           >
             <ChevronLeft className="h-4 w-4" />
           </button>
           <span className="font-medium px-1">{currentIndex + 1}/{item.images.length}</span>
           <button
             onClick={handleNext}
-            className="p-1 hover:bg-muted rounded-full transition-colors"
+            className="p-1.5 hover:bg-muted rounded-full transition-colors cursor-pointer"
             aria-label="Próxima foto"
+            type="button"
           >
             <ChevronRight className="h-4 w-4" />
           </button>
