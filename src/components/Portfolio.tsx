@@ -43,12 +43,12 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     type: "carousel",
-    title: "Quarto moderno",
+    title: "Cozinha planejada",
     category: "Design de interiores",
     images: [
-      { image: project3, title: "Quarto moderno", category: "Design de interiores" },
-      { image: project4, title: "Quarto moderno", category: "Design de interiores" },
-      { image: project12, title: "Quarto moderno", category: "Design de interiores" },
+      { image: project3, title: "Cozinha planejada", category: "Design de interiores" },
+      { image: project4, title: "Cozinha planejada", category: "Design de interiores" },
+      { image: project12, title: "Cozinha planejada", category: "Design de interiores" },
     ],
   },
   {
