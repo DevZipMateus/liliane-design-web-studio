@@ -59,9 +59,9 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     type: "single",
-    title: "Cozinha gourmet",
+    title: "Lavabo contemporâneo",
     category: "Design de interiores",
-    images: [{ image: project6, title: "Cozinha gourmet", category: "Design de interiores" }],
+    images: [{ image: project6, title: "Lavabo contemporâneo", category: "Design de interiores" }],
   },
   {
     type: "single",
