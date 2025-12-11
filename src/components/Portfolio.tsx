@@ -77,6 +77,64 @@ const portfolioItems: PortfolioItem[] = [
   },
 ];
 
+const PortfolioCard = ({ 
+  item, 
+  onOpenLightbox 
+}: { 
+  item: PortfolioItem; 
+  onOpenLightbox: (item: PortfolioItem) => void;
+}) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev === 0 ? item.images.length - 1 : prev - 1));
+  };
+
+  const handleNext = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev === item.images.length - 1 ? 0 : prev + 1));
+  };
+
+  return (
+    <div
+      onClick={() => onOpenLightbox(item)}
+      className="group relative overflow-hidden rounded-lg shadow-soft hover:shadow-elegant transition-smooth aspect-[4/5] cursor-pointer"
+    >
+      <img
+        src={item.images[currentIndex].image}
+        alt={item.title}
+        className="w-full h-full object-cover transition-smooth group-hover:scale-110"
+      />
+      {item.type === "carousel" && (
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-background/90 backdrop-blur-sm rounded-full px-2 py-1.5 flex items-center gap-1 text-sm text-foreground shadow-md">
+          <button
+            onClick={handlePrev}
+            className="p-1 hover:bg-muted rounded-full transition-colors"
+            aria-label="Foto anterior"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+          <span className="font-medium px-1">{currentIndex + 1}/{item.images.length}</span>
+          <button
+            onClick={handleNext}
+            className="p-1 hover:bg-muted rounded-full transition-colors"
+            aria-label="Próxima foto"
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
+        </div>
+      )}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-smooth">
+        <div className="absolute bottom-0 left-0 right-0 p-6">
+          <p className="text-primary-foreground/80 text-sm mb-1">{item.category}</p>
+          <h3 className="text-primary-foreground text-xl font-semibold">{item.title}</h3>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Portfolio = () => {
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
 
@@ -137,30 +195,11 @@ const Portfolio = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 max-w-7xl mx-auto">
             {portfolioItems.map((item, index) => (
-              <div
+              <PortfolioCard
                 key={index}
-                onClick={() => setSelectedItem(item)}
-                className="group relative overflow-hidden rounded-lg shadow-soft hover:shadow-elegant transition-smooth aspect-[4/5] cursor-pointer"
-              >
-                <img
-                  src={item.images[0].image}
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-smooth group-hover:scale-110"
-                />
-                {item.type === "carousel" && (
-                  <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-background/90 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-2 text-sm text-foreground shadow-md">
-                    <ChevronLeft className="h-4 w-4" />
-                    <span className="font-medium">{item.images.length} fotos</span>
-                    <ChevronRight className="h-4 w-4" />
-                  </div>
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-smooth">
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <p className="text-primary-foreground/80 text-sm mb-1">{item.category}</p>
-                    <h3 className="text-primary-foreground text-xl font-semibold">{item.title}</h3>
-                  </div>
-                </div>
-              </div>
+                item={item}
+                onOpenLightbox={setSelectedItem}
+              />
             ))}
           </div>
         </div>
