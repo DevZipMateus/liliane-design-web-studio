@@ -27,6 +27,7 @@ import cozinhaBranca1 from "@/assets/cozinha-branca-1.png";
 import cozinhaBranca2 from "@/assets/cozinha-branca-2.png";
 import cozinhaBranca3 from "@/assets/cozinha-branca-3.png";
 import salaTv from "@/assets/sala-tv.jpg";
+import salaTv2 from "@/assets/sala-tv-2.png";
 
 type ProjectItem = {
   image: string;
@@ -133,6 +134,12 @@ const portfolioItems: PortfolioItem[] = [
     title: "Sala de TV",
     category: "Design de interiores",
     images: [{ image: salaTv, title: "Sala de TV", category: "Design de interiores" }],
+  },
+  {
+    type: "single",
+    title: "Sala de TV moderna",
+    category: "Design de interiores",
+    images: [{ image: salaTv2, title: "Sala de TV moderna", category: "Design de interiores" }],
   },
 ];
 
