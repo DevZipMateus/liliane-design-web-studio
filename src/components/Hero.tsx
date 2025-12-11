@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-2xl bg-background/20 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-2xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-            Lilian Design de Interiores
+            Lilian Design de Interiores e Decorações
           </h1>
           <h2 className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 leading-relaxed text-neutral-950 lg:text-2xl">
             Transformando ambientes em experiências únicas. Design sofisticado que reflete sua
