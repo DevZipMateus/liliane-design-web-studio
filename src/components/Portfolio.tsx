@@ -9,7 +9,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import project1 from "@/assets/portfolio-1.jpg";
-import project2 from "@/assets/portfolio-2.jpg";
 import project3 from "@/assets/portfolio-3.jpg";
 import project4 from "@/assets/portfolio-4.jpg";
 import project5 from "@/assets/portfolio-5.jpg";
@@ -17,8 +16,6 @@ import project6 from "@/assets/portfolio-6.jpg";
 import project7 from "@/assets/portfolio-7.jpg";
 import project8 from "@/assets/portfolio-8.jpg";
 import project9 from "@/assets/portfolio-9.jpg";
-import project10 from "@/assets/portfolio-10.jpg";
-import project11 from "@/assets/portfolio-11.jpg";
 import project12 from "@/assets/portfolio-12.jpg";
 
 type ProjectItem = {
@@ -43,12 +40,6 @@ const portfolioItems: PortfolioItem[] = [
       { image: project1, title: "Home office corporativo", category: "Design de interiores" },
       { image: project9, title: "Home office corporativo", category: "Design de interiores" },
     ],
-  },
-  {
-    type: "single",
-    title: "Home office moderno",
-    category: "Design de interiores",
-    images: [{ image: project2, title: "Home office moderno", category: "Design de interiores" }],
   },
   {
     type: "single",
@@ -85,18 +76,6 @@ const portfolioItems: PortfolioItem[] = [
     title: "Dormitório elegante",
     category: "Design de interiores",
     images: [{ image: project8, title: "Dormitório elegante", category: "Design de interiores" }],
-  },
-  {
-    type: "single",
-    title: "Dormitório casal",
-    category: "Design de interiores",
-    images: [{ image: project10, title: "Dormitório casal", category: "Design de interiores" }],
-  },
-  {
-    type: "single",
-    title: "Quarto azul moderno",
-    category: "Design de interiores",
-    images: [{ image: project11, title: "Quarto azul moderno", category: "Design de interiores" }],
   },
   {
     type: "single",
