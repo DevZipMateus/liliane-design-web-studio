@@ -21,7 +21,7 @@ const About = () => {
             </p>
             <p className="text-muted-foreground leading-relaxed mt-6">
               Há mais de duas décadas, o design faz parte da minha essência. Em 2013, me formei em
-              Design de Interiores pela UNIDAVI, em Rio do Sul. Com 6 anos de escritório, construí
+              Design de Interiores pela UNIDAVI, em Rio do Sul - SC. Com 6 anos de escritório, construí
               uma trajetória baseada em sensibilidade, dedicação e respeito ao estilo e à
               personalidade de cada cliente.
             </p>
