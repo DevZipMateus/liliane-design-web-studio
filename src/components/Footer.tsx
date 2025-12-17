@@ -105,9 +105,9 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-sm text-accent-foreground/80 hover:text-primary transition-smooth"
                 >
-                  Rua Coronel Feddersen, 1557
+                  R. Cel. Feddersen, 1557 - Centro
                   <br />
-                  Centro - Rio do Sul
+                  Taió - SC, 89190-000
                 </a>
               </li>
             </ul>
