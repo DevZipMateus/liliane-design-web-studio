@@ -57,9 +57,9 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-smooth"
                 >
-                  Rua Coronel Feddersen, 1557 - Sala comercial
+                  R. Cel. Feddersen, 1557 - Centro
                   <br />
-                  Centro
+                  Taió - SC, 89190-000
                 </a>
               </div>
             </div>
