@@ -99,11 +99,16 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-accent-foreground/80">
+                <a
+                  href="https://maps.app.goo.gl/GBprqLT9mk284Ms68"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-accent-foreground/80 hover:text-primary transition-smooth"
+                >
                   Rua Coronel Feddersen, 1557
                   <br />
                   Centro - Rio do Sul
-                </span>
+                </a>
               </li>
             </ul>
           </div>
